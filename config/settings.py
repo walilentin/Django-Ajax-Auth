@@ -20,6 +20,8 @@ AUTH_USER_MODEL = 'user.User'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+PASSWORD_RESET_TEMPLATE = 'registration/password_reset_done.html'
+
 # Application definition
 
 INSTALLED_APPS = [
