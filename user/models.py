@@ -17,6 +17,7 @@ class User(AbstractUser):
             "unique": _("A user with that username already exists."),
         },
     )
+    email_verify = models.BooleanField(default=False)
     email = models.EmailField('email addres', blank=True, unique=True)
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
